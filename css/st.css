@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+/* Textmarkierung
+____________________________________________________*/
+::selection {
+    background: #fff5e0;
+    color: #000000;
+}
+
+/* Scrollbar
+____________________________________________________*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body * {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Titelbild
+____________________________________________________*/
+.LogoLuigis {
+    width: 35%;
+    margin-top: 9rem;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.titelbild {
+    margin-top: 61.5px;
+    width: 100%;
+}
+
+/* Wrapper / Sidebar
+____________________________________________________*/
+.wrapper {
+    z-index: 1;
+    position: sticky;
+    top: 61.5px;
+    font-family: "Nerko One", cursive;
+    font-size: 25px;
+    width: 250px;
+    background-color: #ffffff;
+}
+
+.wrapper .sidebar {
+    width: 250px;
+}
+
+.wrapper .sidebar ul {
+    padding-left: 0px;
+}
+
+.wrapper .sidebar ul li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+    color: #222222;
+    display: block;
+    padding: 30px;
+}
+
+.wrapper .sidebar ul li a .fas {
+    width: 50px;
+    padding-right: 20px;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #fff5e0;
+}
+
+.wrapper .sidebar ul li a:hover {
+    text-decoration: none;
+    color: #851714;
+}
+
+/*Navbar Aside Change Color indem per JS die Klasse "scrolled" hinzugefügt wird*/
+.navbar-fixed-top.scrolled {
+    background-color: #fffdfa !important;
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.075) !important;
+    transition: 200ms linear;
+}
+
+/* Texte und Formatierungen
+____________________________________________________*/
+h1 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+hr.hrThick {
+    justify-content: left;
+    border-top: 2px solid #000000;
+    width: 50px;
+    margin: 25px 0 20px 0;
+}
+
+section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+section.firstSection p {
+    font-weight: 500;
+    max-width: 500px;
+}
+
+section.firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -570px;
+}
+
+article {
+    padding-top: 80px;
+    margin-top: 180px;
+    justify-content: center;
+    text-align: center;
+}
+
+article .hrThick {
+    margin: 25px auto 20px auto;
+}
+
+.bildRund {
+    margin: 50px 50px 50px 100px;
+}
+
+.bildRund img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.leftMargin {
+    margin: 0px 50px 0px 300px;
+}
+
+.anfahrt {
+    margin-top: 30px;
+}
+
+h4.alignCenter {
+    text-align: center !important;
+}
+
+/* Pizza Bestellung
+____________________________________________________*/
+.pizzaBestellung {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.pizzaElemente {
+    margin: 50px 100px 50px 100px;
+}
+
+.pizzaElemente img {
+    width: 300px;
+}
+
+.bestellButtonContainer {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; /*VanillaTilt.js*/
+    transform: perspective(1000px); /*VanillaTilt.js*/
+}
+
+.bestellButtonContainer:hover img {
+    transition: 100ms linear;
+    opacity: 0.55;
+}
+
+.bestellButtonContainer:hover button.bestellButton {
+    opacity: 1;
+    display: block;
+    transition: 400ms linear;
+}
+
+.bestellButtonContainer:hover button.bestellButton:hover {
+    color: #851714;
+    background-color: #fff5e0;
+}
+
+button.btn.bestellButton {
+    transform: translateZ(40px); /*VanillaTilt.js*/
+    transition: 400ms linear;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    background-color: #fffdfa;
+    color: #000000;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+button.btn.bestellButton:focus,
+button.btn#resetButton:focus {
+    box-shadow: none !important;
+}
+
+/* reset Button */
+.btn#resetButton {
+    transition: 400ms linear;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #851714;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 330px;
+    height: 60px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.btn.btn#resetButton:hover {
+    cursor: default;
+}
+
+/* Blocksatz nebeneinander
+____________________________________________________*/
+
+.blocksatzContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blocksatzInhalt {
+    margin: 10px 40px 40px 40px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.blocksatzInhalt p {
+    text-align: justify;
+}
+
+/* Google Maps 
+____________________________________________________*/
+iframe {
+    margin-top: 40px;
+}
+
+/* Labels und Formulare 
+____________________________________________________*/
+label.labelMargin {
+    margin-top: 20px;
+}
+
+.submitButton {
+    margin-top: 20px;
+}
+
+/* Überschriften für Kontaktformular
+anstatt Labels */
+h5 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-top: 25px;
+}
+
+/* Parallax 
+____________________________________________________*/
+.parallaxZutaten {
+    background-image: url("../img/luigis/Bild02_ohneWeiss_Luigis.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxAnfahrt {
+    background-image: url("../img/luigis/Bild03_ohneWeiss_Luigis.jpg");
+    width: 100%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clip {
+    width: 100%;
+    margin: 150px 0px -100px 0px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}

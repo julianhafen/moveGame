@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"> <!-- Einbindung Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/st.css"> <!-- Einbindung eigene CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style_old.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    <script src="js/jquery.min.js"></script> <!-- Einbindung Jquery JS-->
+    <script src="js/bootstrap.min.js"></script> <!-- Einbindung Bootstrap JS-->
+    <script src="js/st.js" defer></script> <!-- Einbindung eigene JS-->
+    
+    <title>Verschiebespiel</title>
+</head>
+
+<body>
+    <!-- Titelbilder -->
+    <header>
+        <img draggable="false" src="img/Download.png" alt="Titelbild" class="titelbild">
+    </header>
+
+    <!---Game -->>
+    <section>
+        <h1 class="game--title">Verschiebespiel</h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+    </section>
+
+    <!--Script for Game-->
+    <script src="script.js"></script>
+
+    <!-- Spielebeschreibung -->
+    <div class="middleMargin">
+        <article id="NavZutaten">
+            <h1><i class="fas fa-align-left"></i></h1>
+            <h1>Das Verschiebespiel</h1>
+            <h2>Von Noyes Palmer Chapman</h2>
+            <hr class="hrThick">
+            <p>Ein Feld (das „Loch“) bleibt also frei. Eine (vertikal oder horizontal) benachbarte Kachel kann jeweils in das freie Feld hineingeschoben werden.
+                Die Aufgabe besteht nun darin, durch Verschieben der Kacheln die Zahlen von 1 bis 8 aufsteigend anzuordnen.
+            </p>
+        </article>
+
+    </div>
+
+              <!-- Impressum -->
+              <article id="NavImpressum">
+                <h1><i class="fas fa-id-card"></i></h1>
+                <h1>Impressum</h1>
+                <hr class="hrThick">
+                <p><b>Julian Hafen</b><br />
+                    Alte Poststraße 16/1<br />
+                    88263 Horgenzell<br />
+                <p><b>Tel.:</b> 07504 1796<br />
+                    <b>Mobil:</b> +49 1748147385
+                </p>
+                <p>Für den Inhalt verantwortlich: Hafen Julian<br />
+                    Irrtümer & Änderungen vorbehalten.<br />
+                    Verwendung und Veröffentlichung nur mit ausdrücklicher, schriftlicher Genehmigung.</p>
+            </article>
+    </div>
+</body>
+
+</html>
